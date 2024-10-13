@@ -2,7 +2,7 @@ import React from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from './ui/button';
 
-const Banner = () => {
+const Banner:React.FC = () => {
   return (
     <div className='flex flex-col h-[28rem] items-center justify-center bg-[#fff7f5] px-6 text-center'>
       <h6 className='text-3xl sm:text-5xl font-bold text-[#120b46] mb-4'>
