@@ -3,9 +3,9 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 
 type ArticleType = {
-  imageUrl: string,
-  title: string,
-  description: string,
+ _id: string;
+ title: string;
+ description: string;
 }
 
 type BlogCardProps = {
@@ -31,7 +31,7 @@ const BlogCard: React.FC<BlogCardProps> = ({heading, articles}) => {
         {articles.map((article, index) => (
           <div key={index} className="rounded-lg overflow-hidden shadow-lg bg-white">
             <Image
-              src={article.imageUrl}
+              src={`https://dummyjson.com/image/400x200/008080/ffffff?text=${article.title}`}
               width={300}
               height={300}
               alt={article.title}

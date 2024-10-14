@@ -14,7 +14,7 @@ const Navbar : React.FC = () => {
       <ul className='hidden md:flex items-center justify-center space-x-4'>
         <Link className='text-[#120b46]' href=''>Home</Link>
         <Link className='text-[#120b46]' href=''>About Us</Link>
-        <Link className='text-[#120b46]' href=''>Blog</Link>
+        <Link className='text-[#120b46]' href='/addpost'>Blog</Link>
         <Link className='text-[#120b46]' href=''>Trending</Link>
         <Link className='text-[#120b46]' href=''>Contact</Link>
       </ul>
